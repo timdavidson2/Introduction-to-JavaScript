@@ -261,15 +261,15 @@ Using the grade function below do the following:
   
 function grade(score){
     if(score <= 100 && score >= 90){
-      return "You got an A";
+      return "you got an A";
     }else if(score <= 89 && score >= 80){
-      return "You got a B";
+      return "you got a B";
     }else if(score <= 79 && score >=70){
-      return "You got a C";
+      return "you got a C";
     }else if(score <= 69 && score >= 60){
-      return "You got a D";
+      return "you got a D";
     }else if(score <= 60 && score > 0){
-      return "You got a  F";
+      return "you got a  F";
     }
   }
   console.log(grade(45))
@@ -302,14 +302,14 @@ function foo(){
     return 'bar';
 }
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-// export default{
-//     foo,
-//     multiply,
-//     dogYears,
-//     hungryDog,
-//     game,
-//     miles,
-//     feet,
-//     annoyingSong,
-//     grade
-// }
+export default{
+    foo,
+    multiply,
+    dogYears,
+    hungryDog,
+    game,
+    miles,
+    feet,
+    annoyingSong,
+    grade
+}
