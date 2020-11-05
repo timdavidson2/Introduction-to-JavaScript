@@ -63,7 +63,7 @@ Do the following:
 
 let year = "1999";
 
-if(year === "1999"){
+if(year == "1999"){
   year = 1999; 
 }
 console.log(year)
@@ -95,8 +95,8 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(humanYears, dog=7){
-  return humanYears * dog;
+function dogYears(humanYears){
+  return humanYears * 7;
 }
 console.log(dogYears(10))
 
@@ -145,7 +145,7 @@ function hungryDog(age, weight){
     return weight * .04;
   }
 }
-console.log(hungryDog(.58,10))
+console.log(hungryDog(1,15))
 
 
 
@@ -203,8 +203,8 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(KM,convert = 1.6){
-    return KM * convert;
+function miles(KM){
+    return KM * 1.6;
   }
 console.log(miles(2000));
 
@@ -217,10 +217,10 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function toFeet(cm,feet=.0328084){
-    return cm * feet;
+function feet(cm){
+    return cm * 0.0328084;
   }
-  console.log(toFeet(4));
+  console.log(feet(4));
   
  
 
@@ -237,11 +237,11 @@ Using the annoyingSong function below do the following:
 
 function annoyingSong(num) {  
   
-  for (i = num; i >= 1; i--){
-    return i + "bottles of soda on the wall," (i) + "bottles of soda, take one down and pass it around" (i--) + "bottles of soda on the wall";
-    console.log(annoyingSong(99));
+  for (let i = num; i >= 1; i--){
+    return i + "bottles of soda on the wall," + i + "bottles of soda, take one down and pass it around" + i-- + "bottles of soda on the wall";
   }
-  console.log(annoyingSong(99))
+}
+  console.log(annoyingSong(99));
       
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -261,15 +261,15 @@ Using the grade function below do the following:
   
 function grade(score){
     if(score <= 100 && score >= 90){
-      return "A";
+      return "You got an A";
     }else if(score <= 89 && score >= 80){
-      return "B";
+      return "You got a B";
     }else if(score <= 79 && score >=70){
-      return "C";
+      return "You got a C";
     }else if(score <= 69 && score >= 60){
-      return "D";
+      return "You got a D";
     }else if(score <= 60 && score > 0){
-      return "F";
+      return "You got a  F";
     }
   }
   console.log(grade(45))
@@ -302,15 +302,14 @@ function foo(){
     return 'bar';
 }
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-export default{
-    foo,
-    multiply,
-    dogYears,
-    hungryDog,
-    game,
-    miles,
-    feet,
-    annoyingSong,
-    grade
-}
-}
+// export default{
+//     foo,
+//     multiply,
+//     dogYears,
+//     hungryDog,
+//     game,
+//     miles,
+//     feet,
+//     annoyingSong,
+//     grade
+// }
