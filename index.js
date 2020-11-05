@@ -170,11 +170,26 @@ Use the game function below to do the following:
   
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
+let computer = Math.random();
 
-      // (user, computer) => {
-      //   /*add your code here*/
-      // }
-  
+  function game(user, computer){
+        if( computer = 1){
+          computer = 'rock';
+        }else if(computer = 2){
+          computer = 'paper';
+        }else if(computer = 3){
+          computer = 'scissors';
+        }
+
+        if(user === 'scissors' && computer === 'paper' || user === 'paper' && computer === 'rock' || user === 'rock' && computer === 'scissors'){
+          return "you win!"
+        } else if(user === 'paper' && computer === 'scissors' || user === 'rock' && computer === 'paper' || user === 'scissors' && computer === 'rock'){
+          return "you lose!"
+        }else if(user, computer === 'paper' || user, computer === 'scissors' || user, computer === 'rock' ){
+          return "it's a tie"
+        }
+      }
+      console.log(game('scissors',computer))
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -188,10 +203,10 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(KM,convert = 1.6){
+    return KM * convert;
   }
-
+console.log(miles(10));
 
 
 //Task 5b - Feet to CM
@@ -202,9 +217,11 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function toFeet(cm,feet=.0328084){
+    return cm * feet;
   }
+  console.log(toFeet(4));
+  
  
 
 
@@ -238,10 +255,20 @@ Using the grade function below do the following:
    below 60 = F
 */
   
-function grade(/*add your code here*/){
-    /*add your code here*/
+function grade(score){
+    if(score <= 100 && score >= 90){
+      return "A";
+    }else if(score <= 89 && score >= 80){
+      return "B";
+    }else if(score <= 79 && score >=70){
+      return "C";
+    }else if(score <= 69 && score >= 60){
+      return "D";
+    }else if(score <= 60 && score > 0){
+      return "F";
+    }
   }
-  
+  console.log(grade(73))
   
   
   
