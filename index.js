@@ -189,7 +189,7 @@ let computer = Math.round(Math.random() * 3 + 1);
           return "it's a tie"
         }
       }
-      console.log(game('paper',computer))
+      console.log(game('rock',computer))
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -206,7 +206,7 @@ Using the miles function below do the following:
 function miles(KM,convert = 1.6){
     return KM * convert;
   }
-console.log(miles(100));
+console.log(miles(2000));
 
 
 //Task 5b - Feet to CM
@@ -235,10 +235,14 @@ Using the annoyingSong function below do the following:
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
 
-// function annoyingSong(/*add your code here*/){
-//         /*add your code here*/
-//   }
-
+function annoyingSong(num) {  
+  
+  for (i = num; i >= 1; i--){
+    return i + "bottles of soda on the wall," (i) + "bottles of soda, take one down and pass it around" (i--) + "bottles of soda on the wall";
+    console.log(annoyingSong(99));
+  }
+  console.log(annoyingSong(99))
+      
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -309,4 +313,4 @@ function foo(){
 //     annoyingSong,
 //     grade
 // }
-// }
+ }
