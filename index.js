@@ -302,15 +302,15 @@ function foo(){
     return 'bar';
 }
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-// export default{
-//     foo,
-//     multiply,
-//     dogYears,
-//     hungryDog,
-//     game,
-//     miles,
-//     feet,
-//     annoyingSong,
-//     grade
-// }
- }
+export default{
+    foo,
+    multiply,
+    dogYears,
+    hungryDog,
+    game,
+    miles,
+    feet,
+    annoyingSong,
+    grade
+}
+}
