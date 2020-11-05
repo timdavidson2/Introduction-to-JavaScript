@@ -42,7 +42,7 @@ Do the following:
 let dog = 'ChiChi';
 let isCute = 'no';
 
-if(isCute = 'yes'){
+if(isCute === 'yes'){
   dog = 'ChiChi';
  }else{
   dog = 'It must be Diesel';
@@ -63,7 +63,7 @@ Do the following:
 
 let year = "1999";
 
-if(year = "1999"){
+if(year === "1999"){
   year = 1999; 
 }
 console.log(year)
@@ -127,13 +127,28 @@ Use the hungryDog function and feeding requirements below to do the following:
     
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
-// const age = 1;
-// const weight = 10;
 
-function hungryDog(){
-    if(age >= 1 && weight < 5, weight * .05){
-      console.log(hungryDog);
+function hungryDog(age, weight){
+  if(age >= 1  && weight <= 5){
+    return weight * .05;
+  }else if(age >= 1 && weight >= 6 && weight <= 10){
+    return weight * .04;
+  }else if(age >= 1 && weight >= 11 && weight <= 15){
+    return weight * .03;
+  }else if(age >= 1 && weight > 15){
+    return weight * .02;
+  }else if(age >= .17 && age <= .33 ){
+    return weight * .10;
+  }else if(age >= .33 && age <= .58 ){
+    return weight * .05;
+  }else if(age >= .58 && age <= 1 ){
+    return weight * .04;
   }
+}
+console.log(hungryDog(.58,10))
+
+
+
 
 
 
@@ -156,9 +171,9 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
-function game(user, computer){
-    /*add your code here*/
-}
+      // (user, computer) => {
+      //   /*add your code here*/
+      // }
   
   
 
@@ -266,4 +281,5 @@ function foo(){
 //     feet,
 //     annoyingSong,
 //     grade
+// }
 // }
