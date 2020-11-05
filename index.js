@@ -170,7 +170,7 @@ Use the game function below to do the following:
   
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
-let computer = Math.random();
+let computer = Math.round(Math.random() * 3 + 1);
 
   function game(user, computer){
         if( computer = 1){
@@ -189,7 +189,7 @@ let computer = Math.random();
           return "it's a tie"
         }
       }
-      console.log(game('scissors',computer))
+      console.log(game('paper',computer))
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -206,7 +206,7 @@ Using the miles function below do the following:
 function miles(KM,convert = 1.6){
     return KM * convert;
   }
-console.log(miles(10));
+console.log(miles(100));
 
 
 //Task 5b - Feet to CM
@@ -235,9 +235,9 @@ Using the annoyingSong function below do the following:
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
-  }
+// function annoyingSong(/*add your code here*/){
+//         /*add your code here*/
+//   }
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -268,7 +268,7 @@ function grade(score){
       return "F";
     }
   }
-  console.log(grade(73))
+  console.log(grade(45))
   
   
   
